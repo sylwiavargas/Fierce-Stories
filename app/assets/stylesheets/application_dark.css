@@ -59,18 +59,18 @@ font-family: 'Monaco';
 }
 
 #welcome h1 {
-    font-family: 'Cupertino';
-    display: block;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    line-height: 0.8em;
-    font-weight: bold;
-    font-size: 230pt;
-    animation-duration: 2s;
-    animation-name: bounceIn;
-    animation-fill-mode: forwards;
+  font-family: 'Cupertino';
+  display: block;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 0.8em;
+  font-size: 210pt;
+  animation-duration: 2s;
+  animation-name: bounceIn;
+  animation-fill-mode: forwards;
+  /* animation-direction: reverse; */
     background: transparent;
 }
 
