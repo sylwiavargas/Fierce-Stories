@@ -12,6 +12,7 @@ module FierceStories
     config.load_defaults 5.2
     config.serve_static_assets = true
     config.assets.initialize_on_precompile = false
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
