@@ -29,6 +29,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'activerecord-reset-pk-sequence'
 
+gem 'fontello_rails_converter', github: 'railslove/fontello_rails_converter', require: nil
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
