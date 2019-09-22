@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Cupertino';
-  src: url('Cupertino.ttf') format('truetype');
+  src: font-url('assets/Cupertino.ttf') format('truetype');
 }
 
 @font-face {
