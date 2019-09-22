@@ -13,8 +13,7 @@
 }
 
 @font-face {
-  font-family: 'Cupertino';
-  src: font-url('assets/fonts/Cupertino.ttf');
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 @font-face {
