@@ -15,7 +15,7 @@
 @font-face {
   font-family: Arial, Helvetica, sans-serif;
   font-family: 'Cupertino';
-  src: url('Cupertino.tff');
+  src: url('../fonts/Cupertino.tff');
 }
 
 @font-face {
