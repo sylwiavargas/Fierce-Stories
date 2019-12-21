@@ -19,7 +19,9 @@ class UsersController < ApplicationController
         log_in_user(@user.id)
         redirect_to story_books_path
       else
-        flash[:errors] = @user.errors.full_messages        render :new
+        @errors = @user.errors.full_messages   
+        flash[:errors] = @errors       
+        render :new
       end
   end
 
