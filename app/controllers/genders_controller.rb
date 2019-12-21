@@ -2,6 +2,7 @@ class GendersController < ApplicationController
 
     def new
       @gender = Gender.new
+      @errors = flash[:errors]
     end
 
     def create
@@ -9,9 +10,9 @@ class GendersController < ApplicationController
         if @gender.valid?
           @gender.save
           redirect_to new_character_path
+          flash[:success] = "Good job filling out the form!"
         else
-          @errors = @gender.errors.full_messages
-          render :new
+          flash[:errors] = @gender.errors.full_messages          render :new
         end
     end
 

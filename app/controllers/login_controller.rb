@@ -8,6 +8,7 @@ class LoginController < ApplicationController
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       log_in_user(@user.id)
+      flash[:success] = "Good job filling out the form!"
       redirect_to story_books_path
     else
       flash[:errors] = [ "User doesn't exist or invalid password" ]

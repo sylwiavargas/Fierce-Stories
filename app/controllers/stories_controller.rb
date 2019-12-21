@@ -7,14 +7,17 @@ class StoriesController < ApplicationController
 
   def new
     @story = Story.new
+    @errors = flash[:errors]
   end
 
   def create
     @story = Story.new(story_params)
       if @story.valid?
+        flash[:success] = "Good job filling out the form!"
         @story.save
         redirect_to @story
       else
+        flash[:errors] = @story.errors.full_messages
         render :new
       end
   end

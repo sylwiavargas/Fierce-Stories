@@ -7,15 +7,17 @@ class CharactersController < ApplicationController
 
   def new
     @character = Character.new
+    @errors = flash[:errors]
   end
 
   def create
     @character = Character.new(character_params)
       if @character.valid?
         @character.save
+        flash[:success] = "Good job filling out the form!"
         redirect_to new_story_book_path(character: @character)
       else
-        @errors = @character.errors.full_messages
+        flash[:errors] = @character.errors.full_messages
         render :new
       end
   end

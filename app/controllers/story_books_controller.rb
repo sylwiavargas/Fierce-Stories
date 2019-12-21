@@ -9,6 +9,7 @@ class StoryBooksController < ApplicationController
     @character = Character.find(params[:character])
     @story_book = StoryBook.new
     @story_book.character = @character
+    @errors = flash[:errors]
   end
 
   def create
@@ -20,11 +21,12 @@ class StoryBooksController < ApplicationController
     @story_book = StoryBook.new(story_params)
     @story_book.user_id = session[:user_id]
     if @story_book.valid?
+      flash[:success] = "Good job filling out the form!"
       @story_book.user_id = session[:user_id]
       @story_book.save
       redirect_to @story_book
     else
-      @errors = @story_book.errors.full_messages
+      flash[:errors] = @story_book.errors.full_messages
       @story_book.user_id = session[:user_id]
       render :new
     end

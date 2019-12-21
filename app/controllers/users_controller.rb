@@ -9,21 +9,23 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @errors = flash[:errors]
   end
 
   def create
     @user = User.create(user_params)
       if @user.valid?
+        flash[:success] = "Good job filling out the form!"
         log_in_user(@user.id)
         redirect_to story_books_path
       else
-        @errors = @user.errors.full_messages
-        render :new
+        flash[:errors] = @user.errors.full_messages        render :new
       end
   end
 
   def update
     if @user = User.update(user_params)
+      
       @user.save
       redirect_to @user
     else
