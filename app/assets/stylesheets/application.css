@@ -12,17 +12,8 @@
   }
 }
 
-@font-face {
-  font-family: Arial, Helvetica, sans-serif;
-  src: url('../assets/fonts/helvetica.tff');
-}
-
-@font-face {
-  font-family: 'Monaco';
-}
-
 * {
-  font-family: 'Monaco';
+  font-family: 'Roboto';
 }
 
 #welcome {
@@ -34,8 +25,8 @@
 }
 
 #welcome {
-  font-family: 'Helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-align: left;
   text-decoration: none;
   font-style: normal;
@@ -43,7 +34,7 @@
 }
 
 #welcome p {
-  font-family: 'Monaco';
+  font-family: 'Roboto';
   text-align: left;
   text-decoration: none;
   font-style: normal;
@@ -52,8 +43,8 @@
 }
 
 #welcome h1 {
-  font-family: 'Helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   display: block;
   margin-block-start: 0.2em;
   margin-block-end: 0.1em;
@@ -69,8 +60,8 @@
 
 #welcome h2 {
     display: block;
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
     margin-inline-start: 0px;
@@ -80,8 +71,8 @@
 }
 
 #welcome a {
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     text-align: center;
     text-decoration: none;
     font-style: normal;
@@ -98,8 +89,8 @@
     }
 
 #welcome a:visited {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -125,13 +116,13 @@ text-decoration: underline;
 #standard_page {
   width: 90%;
   margin: 0 auto;
-  font-family: 'Monaco';
+  font-family: 'Roboto';
 }
 
 #standard_page h1 {
     display: block;
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     margin-block-start: 0.2em;
     margin-block-end: 0.2em;
     margin-inline-start: 0px;
@@ -142,8 +133,8 @@ text-decoration: underline;
 
 #standard_page h2 {
     display: block;
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
     margin-inline-start: 0px;
@@ -154,7 +145,7 @@ text-decoration: underline;
 
 #standard_page p {
     display: block;
-    font-family: 'Monaco';
+    font-family: 'Roboto';
 
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
@@ -165,7 +156,7 @@ text-decoration: underline;
 }
 
 #standard_page label {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -175,7 +166,7 @@ text-decoration: underline;
 }
 
 #standard_page input {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -185,7 +176,7 @@ text-decoration: underline;
 }
 
 #standard_page a:link {
-  font-family: 'Monaco';
+  font-family: 'Roboto';
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -200,7 +191,7 @@ text-decoration: underline;
 }
 
 #standard_page a:visited {
-  font-family: 'Monaco';
+  font-family: 'Roboto';
   text-decoration: none;
   color: #58B99D;
 }
@@ -222,7 +213,7 @@ text-decoration: underline;
 
 #homepage h1 {
     /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
     font-style: normal;
@@ -267,7 +258,7 @@ text-decoration: underline;
 }
 
 #homepage label {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -277,7 +268,7 @@ text-decoration: underline;
 }
 
 #homepage input {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -287,8 +278,8 @@ text-decoration: underline;
 }
 
 #homepage a:link {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -302,8 +293,8 @@ text-decoration: underline;
 }
 
 #homepage a:visited {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-decoration: none;
   color: #0E2B3F;
 }
@@ -329,8 +320,8 @@ text-decoration: underline;
   }
 
 #story h1 {
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
     font-style: normal;
@@ -378,7 +369,7 @@ text-decoration: underline;
 }
 
 #story label {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -388,7 +379,7 @@ text-decoration: underline;
 }
 
 #story input {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -398,8 +389,8 @@ text-decoration: underline;
 }
 
 #story a:link {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -413,8 +404,8 @@ text-decoration: underline;
 }
 
 #story a:visited {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-decoration: none;
   color: #0E2B3F;
 }
@@ -436,8 +427,8 @@ text-decoration: underline;
 }
 
 #form h1 {
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
     font-style: normal;
@@ -453,8 +444,8 @@ text-decoration: underline;
 }
 
 #form h2 {
-      /* font-family: 'helvetica'; */
-      font-family: Helvetica;
+      /* font-family: 'Roboto'; */
+      font-family: 'Roboto';
       display: block;
       margin-block-start: 0.4em;
       margin-block-end: 0.4em;
@@ -490,7 +481,7 @@ text-decoration: underline;
 }
 
 #form label {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -501,7 +492,7 @@ text-decoration: underline;
 }
 
 #form select {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -512,7 +503,7 @@ text-decoration: underline;
 }
 
 #form input {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -522,8 +513,8 @@ text-decoration: underline;
 }
 
 #form a:link {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -537,8 +528,8 @@ text-decoration: underline;
 }
 
 #form a:visited {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-decoration: none;
   color: #0E2B3F;
 }
@@ -554,7 +545,7 @@ text-decoration: underline;
 }
 
 #header input {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -577,8 +568,8 @@ text-decoration: underline;
 }
 
 #header h1 {
-    /* font-family: 'helvetica'; */
-    font-family: Helvetica;
+    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
     font-style: normal;
@@ -623,7 +614,7 @@ text-decoration: underline;
 }
 
 #header label {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -633,7 +624,7 @@ text-decoration: underline;
 }
 
 #header input {
-    font-family: 'Monaco';
+    font-family: 'Roboto';
     display: block;
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -643,8 +634,8 @@ text-decoration: underline;
 }
 
 #header a:link {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -660,8 +651,8 @@ text-decoration: underline;
 
 
 #header a:visited {
-  font-family: 'helvetica';
-  /* font-family: Helvetica; */
+  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   text-decoration: none;
   color: #0E2B3F;
 }
