@@ -12,6 +12,42 @@
   }
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-ThinItalic-webfont.eot');
+  src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Roboto-ThinItalic-webfont.woff') format('woff'),
+       url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+       url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+}
+
+body{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.footer-break{
+  margin-top: 5vh;
+  background-color: #002F5E; 
+  height: 2px; 
+  border: 0;
+}
+
+.github{
+  position: relative;
+  top: 10px;
+  left: 5px;
+  width: 45px;
+  height: 45px;
+}
+
+.footer {
+  font-family: 'Roboto Regular', sans-serif;
+  color: #002F5E;
+  font-size: 25px;
+}
+
+/* 
 * {
   font-family: 'Roboto';
 }
@@ -666,27 +702,4 @@ text-decoration: underline;
   color: blue;
   text-decoration: underline;
 }
-
-.github{
-  width: 40px;
-  height: 40px;
-  text-align: right;
-  margin-left: 80%;
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-text {
-  margin-left: 80%;
-  display: flex;
-  flex-direction: row;
-}
-
-.github:hover{
-  width: 45px;
-  height: 45px;
-}
-
-.footer-text:hover{
-  color: #f57d7d;
-}
+ */

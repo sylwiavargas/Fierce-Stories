@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag 'application_dark', media: 'all', 'data-turbolinks-track': 'reload' %>
     <% else %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <% end %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -18,13 +18,16 @@
   <body>
 
     <header>
-      <%= render 'layouts/header' %>
-
-      <% if @notification %>
-        <p class="message">
-          <%= @notification %>
-        </p>
-      <% end %>
+      <% if !current_page?(root_path) %>
+        <%= render 'layouts/header' %>
+        <h1> nope </h1>
+        <% if @notification %>
+          <p class="message">
+            <%= @notification %>
+          </p>
+        <% end %>
+      
+      <%end%>
 
     </header>
     <%= yield %>
