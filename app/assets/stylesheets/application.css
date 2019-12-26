@@ -23,6 +23,9 @@
 
 body{
   margin: 2%;
+  font-family: 'Roboto Regular', sans-serif;
+  color: #002F5E;
+  font-weight: 100;
 }
 
 .footer-break{
@@ -42,8 +45,6 @@ body{
 }
 
 .footer {
-  font-family: 'Roboto Regular', sans-serif;
-  color: #002F5E;
   font-size: 25px;
 }
 
@@ -52,33 +53,33 @@ body{
 }
 
 .button {
-  font-family: 'Roboto Regular', sans-serif;
   text-align: center; 
   font-size: 25px;
   color: white;
-  font-weight: 100;
   padding: 1.5%;
 }
 
-.mainb {
+.main-button {
   background-color: #002F5E; 
   float: left;
 }
 
+.left-margin{
+  margin-left: 2%;
+}
+
 h1{
   font-family: 'Roboto Black', sans-serif;
-  color: #002F5E;
   font-size: 60px;
   line-height: 80%;
   margin-bottom: 0%;
 }
 
 h2{
-  font-family: 'Roboto Regular', sans-serif;
-  color: #002F5E;
   font-size: 29px;
   line-height: 0%;
   font-weight: 100;
+  margin-bottom: 10%;
 }
 
 .welcome-margin{
