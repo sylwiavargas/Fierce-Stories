@@ -22,8 +22,7 @@
 }
 
 body{
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 2%;
 }
 
 .footer-break{
@@ -31,6 +30,7 @@ body{
   background-color: #002F5E; 
   height: 2px; 
   border: 0;
+  margin-top: -50px;
 }
 
 .github{
@@ -47,6 +47,44 @@ body{
   font-size: 25px;
 }
 
+.header {
+  background-color: #002F5E; 
+}
+
+.button {
+  font-family: 'Roboto Regular', sans-serif;
+  text-align: center; 
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+  padding: 1.5%;
+}
+
+.mainb {
+  background-color: #002F5E; 
+  float: left;
+}
+
+h1{
+  font-family: 'Roboto Black', sans-serif;
+  color: #002F5E;
+  font-size: 60px;
+  line-height: 80%;
+  margin-bottom: 0%;
+}
+
+h2{
+  font-family: 'Roboto Regular', sans-serif;
+  color: #002F5E;
+  font-size: 29px;
+  line-height: 0%;
+  font-weight: 100;
+}
+
+.welcome-margin{
+  margin-bottom: 20vh;
+}
+
 /* 
 * {
   font-family: 'Roboto';
@@ -61,9 +99,8 @@ body{
 }
 
 #welcome {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
-  text-align: left;
+  font-family: 'Roboto'
+  /* text-align: left;
   text-decoration: none;
   font-style: normal;
   color: #EB3E37;
@@ -79,9 +116,8 @@ body{
 }
 
 #welcome h1 {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
-  display: block;
+  font-family: 'Roboto'
+  /* display: block;
   margin-block-start: 0.2em;
   margin-block-end: 0.1em;
   margin-inline-start: 0px;
@@ -90,13 +126,12 @@ body{
   font-size: 210pt;
   animation-duration: 2s;
   animation-name: bounceIn;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
   /* animation-direction: reverse; */
-}
+/* }
 
 #welcome h2 {
     display: block;
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -107,7 +142,6 @@ body{
 }
 
 #welcome a {
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     text-align: center;
     text-decoration: none;
@@ -118,15 +152,14 @@ body{
     padding: 7px 12px;
     text-align: center;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 20px; */
     /* animation-duration: 2s;
     animation-name: bounceIn;
     animation-direction: reverse; */
-    }
+    /* }
 
 #welcome a:visited {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -157,7 +190,6 @@ text-decoration: underline;
 
 #standard_page h1 {
     display: block;
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     margin-block-start: 0.2em;
     margin-block-end: 0.2em;
@@ -169,7 +201,6 @@ text-decoration: underline;
 
 #standard_page h2 {
     display: block;
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -181,11 +212,11 @@ text-decoration: underline;
 
 #standard_page p {
     display: block;
-    font-family: 'Roboto';
+    font-family: 'Roboto'; */
 
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     font-size: 20pt;
@@ -247,9 +278,9 @@ text-decoration: underline;
   margin: 0 auto;
 }
 
-#homepage h1 {
+#homepage h1 { */
     /* font-family: 'helvetica'; */
-    font-family: 'Roboto';
+    /* font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
     font-style: normal;
@@ -274,10 +305,10 @@ text-decoration: underline;
 }
 
 #homepage p {
-    display: block;
+    display: block; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     font-size: 20pt;
@@ -287,7 +318,7 @@ text-decoration: underline;
     display: block;
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: none;
     font-size: 20pt;
@@ -314,8 +345,7 @@ text-decoration: underline;
 }
 
 #homepage a:link {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -329,8 +359,7 @@ text-decoration: underline;
 }
 
 #homepage a:visited {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-decoration: none;
   color: #0E2B3F;
 }
@@ -356,7 +385,6 @@ text-decoration: underline;
   }
 
 #story h1 {
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
@@ -385,20 +413,20 @@ text-decoration: underline;
 }
 
 #story p {
-    display: block;
+    display: block; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em;
     margin-inline-start: 0px;
     margin-inline-end: 0px; */
-    font-weight: none;
+    /* font-weight: none;
     font-size: 20pt;
 }
 
 #story li {
-    display: block;
+    display: block; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: none;
     font-size: 20pt;
@@ -425,8 +453,7 @@ text-decoration: underline;
 }
 
 #story a:link {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -436,12 +463,11 @@ text-decoration: underline;
   padding: 7px 12px;
   text-align: center;
   display: inline-block;
-  border-radius: 20px;
-}
+  border-radius: 20px; */
+/* }
 
 #story a:visited {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-decoration: none;
   color: #0E2B3F;
 }
@@ -463,7 +489,6 @@ text-decoration: underline;
 }
 
 #form h1 {
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
@@ -480,7 +505,7 @@ text-decoration: underline;
 }
 
 #form h2 {
-      /* font-family: 'Roboto'; */
+
       font-family: 'Roboto';
       display: block;
       margin-block-start: 0.4em;
@@ -493,12 +518,12 @@ text-decoration: underline;
 }
 
 #form p {
-    display: block;
+    display: block; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em;
     margin-inline-start: 0px;
     margin-inline-end: 0px; */
-    font-weight: none;
+    /* font-weight: none;
     color: #0E2B3F;
     font-size: 20pt;
 }
@@ -506,10 +531,10 @@ text-decoration: underline;
 #form li {
     background: #B0D8C3;
     display: block;
-    width: 45%;
+    width: 45%; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: none;
     color: #0E2B3F;
@@ -549,8 +574,7 @@ text-decoration: underline;
 }
 
 #form a:link {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -564,8 +588,7 @@ text-decoration: underline;
 }
 
 #form a:visited {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-decoration: none;
   color: #0E2B3F;
 }
@@ -604,7 +627,6 @@ text-decoration: underline;
 }
 
 #header h1 {
-    /* font-family: 'Roboto'; */
     font-family: 'Roboto';
     text-align: left;
     text-decoration: none;
@@ -630,20 +652,20 @@ text-decoration: underline;
 }
 
 #header p {
-    display: block;
+    display: block; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     font-size: 20pt;
 }
 
 #header li {
-    display: block;
+    display: block; */
     /* margin-block-start: 0.4em;
     margin-block-end: 0.4em; */
-    margin-inline-start: 0px;
+    /* margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: none;
     font-size: 20pt;
@@ -670,8 +692,7 @@ text-decoration: underline;
 }
 
 #header a:link {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-align: center;
   text-decoration: none;
   font-style: normal;
@@ -687,8 +708,7 @@ text-decoration: underline;
 
 
 #header a:visited {
-  font-family: 'Roboto';
-  /* font-family: 'Roboto'; */
+  font-family: 'Roboto'
   text-decoration: none;
   color: #0E2B3F;
 }

@@ -20,13 +20,13 @@
     <header>
       <% if !current_page?(root_path) %>
         <%= render 'layouts/header' %>
-        <h1> nope </h1>
         <% if @notification %>
           <p class="message">
             <%= @notification %>
           </p>
         <% end %>
-      
+      <% else %>
+        <%= render 'layouts/header_welcome' %>
       <%end%>
 
     </header>
