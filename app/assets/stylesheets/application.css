@@ -26,6 +26,15 @@ html{
   min-height: 100%;
 }
 
+a{
+  text-decoration: underline;
+  color: #002F5E;
+}
+
+a:visited{
+  color: #F10060;
+}
+
 body{
   margin: 2% 2% 10%;
   font-family: 'Roboto Regular', sans-serif;
@@ -103,6 +112,102 @@ h2{
 
 .welcome-margin{
   margin-bottom: 20vh;
+}
+
+.standard-margin{
+  margin-bottom: 11vh;
+}
+
+div.standard-header>h1{
+  font-family: 'Roboto Black', sans-serif;
+  font-size: 35px;
+  line-height: 80%;
+  margin-bottom: 1%;
+}
+
+div.standard-header>h2{
+  font-size: 17px;
+  line-height: 0%;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
+
+.float-right{
+  float: right;
+}
+
+.small{
+  font-size: 15px;
+  color: white;
+  height: 5vh;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h3{
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+.login-button{
+  color: white;
+  font-size: 20px;
+  width: 27vw;
+  height: 5.7vh;
+  border: 2px #F10060 solid; 
+  background-color: #F10060;
+  display: block;
+  margin-top: 2%;
+}
+
+.login-button:hover, .login-button:focus {
+  background-color:#002F5E;
+  border: none;
+  color: white;
+}
+
+.login>label{
+  color: #002F5E;
+  font-size: 20px;
+  display: block;
+  margin-top: 2%;
+}
+
+.login>a{
+  font-size: 15px;
+  width: 25vw;
+  text-align: center;
+}
+/* 
+form.login>input:not(input.login-button){
+  background-color: white; 
+  color: #002F5E;
+  padding: 1%;
+  font-size: 30px;
+  height: 3.5vh;
+  width: 25vw;
+  border: 2px #F10060 solid; 
+  display: block;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: white; 
+  -webkit-text-fill-color: #002F5E;
+  padding: 1%;
+  font-size: 15px;
+  transition: background-color 5000s ease-in-out 0s;
+  height: 3.5vh;
+  width: 25vw;
+  border: 2px #F10060 solid; 
 }
 
 /* 

@@ -1,31 +1,24 @@
-<div id="welcome">
-<h2>Welcome back!</h2><br>
-</div>
+<h3>Welcome back!</h3>
 
-<div id="form">
 <% if @errors && @errors.any? %>
-<ul class="errors"> <p>
-<strong>Oh-oh! Fix these errors to move on:</strong>
-</p>
-<% @errors.each do |error| %>
-<li>
-  <%= error %>
-</li>
+  <p><strong>Oh-oh! Fix these errors to move on:</strong></p>
+  <ul class="errors">
+    <% @errors.each do |error| %>
+    <li>
+      <%= error %>
+    </li>
+    <% end %>
+  </ul>
 <% end %>
-</ul>
-<% end %> <br>
-</div>
 
-<div id="standard_page">
-<%= form_tag login_index_path do %>
-      <%= label_tag :username, "Your username:" %>
-      <%= text_field_tag :username %> <br>
-      <%= label_tag :password, "Your password:"%>
-      <%= password_field_tag :password %><br><br>
-  <%= submit_tag "Log in!", class: "hi", :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px;"%>
-<% end %>
-<br>
-</div>
-<div id="welcome">
-<%= link_to "Not a member yet?", new_user_path %>
+<div class="login">
+  <%= form_tag(login_index_path, {class: 'login'}) do %>
+        <%= label_tag :username %>
+        <%= text_field_tag :username %>
+        <%= label_tag :password%>
+        <%= password_field_tag :password %>
+    <%= submit_tag "TAKE ME IN!", class: "login-button"%>
+  <% end %>
+  <br>
+  <%= link_to "Not a member yet?", new_user_path %>
 </div>
