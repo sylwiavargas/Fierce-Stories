@@ -36,7 +36,7 @@ a:visited{
 }
 
 body{
-  margin: 2% 2% 10%;
+  margin: 0% 2% 10% 2%;
   font-family: 'Roboto Regular', sans-serif;
   color: #002F5E;
   font-weight: 100;
@@ -70,6 +70,7 @@ body{
 
 .header {
   background-color: #002F5E; 
+  float: right;
 }
 
 .button {
@@ -122,6 +123,7 @@ div.standard-header>h1{
   font-family: 'Roboto Black', sans-serif;
   font-size: 35px;
   line-height: 80%;
+  margin-top: 1%;
   margin-bottom: 1%;
 }
 
@@ -179,8 +181,8 @@ h3{
   width: 25vw;
   text-align: center;
 }
-/* 
-form.login>input:not(input.login-button){
+
+form.login>input:not(.login-button){
   background-color: white; 
   color: #002F5E;
   padding: 1%;
@@ -189,7 +191,7 @@ form.login>input:not(input.login-button){
   width: 25vw;
   border: 2px #F10060 solid; 
   display: block;
-} */
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
