@@ -217,9 +217,10 @@ div.standard-header>h2{
 
 .login>label, .field_with_errors>label{
   color: #002F5E;
-  font-size: 20px;
+  font-size: 15px;
   display: block;
   margin-top: 2%;
+  margin-bottom: 0.5%;
 }
 
 .login>a{
@@ -233,12 +234,28 @@ div.standard-header>h2{
   margin-bottom: 5%;
 }
 
+select{
+  background-color: white; 
+  color: #002F5E;
+  padding: 5%;
+  font-size: 20px;
+  height: 5vh;
+  width: 27vw;
+  border: 2px #F10060 solid; 
+  display: block;
+  text-align: center;
+}
+
+select + p{
+  float: right;
+}
+
 div.field_with_errors>input, form.login>input:not(.login-button){
   background-color: white; 
   color: #002F5E;
   padding: 1%;
-  font-size: 30px;
-  height: 3.5vh;
+  font-size: 20px;
+  height: 3vh;
   width: 25vw;
   border: 2px #F10060 solid; 
   display: block;
@@ -256,9 +273,9 @@ select:-webkit-autofill:focus {
   background-color: white; 
   -webkit-text-fill-color: #002F5E;
   padding: 1%;
-  font-size: 30px;
+  font-size: 20px;
   transition: background-color 5000s ease-in-out 0s;
-  height: 3.5vh;
+  height: 3vh;
   width: 20vw;
   border: 2px #F10060 solid; 
 }
@@ -304,7 +321,7 @@ select:-webkit-autofill:focus {
   font-size: 15px;
 }
 
-/* story page */
+/* storybook page */
 .story-header>h3{
   margin-bottom: 3%;
 }
@@ -327,6 +344,8 @@ select:-webkit-autofill:focus {
   width: 30px;
   margin-left: 1%;
 }
+
+/* new storybook */
 
 
 /* 

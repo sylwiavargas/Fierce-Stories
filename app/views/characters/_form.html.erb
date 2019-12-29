@@ -1,54 +1,56 @@
-<div id="form">
-<h1>First, let's talk about your character:</h1>
-<br><br>
+<h3>First, let's talk about your character:</h3>
 
 <% if @errors && @errors.any? %>
-<ul class="errors"> <p>
-<strong>Oh-oh! Fix these errors to move on:</strong>
-</p>
-<% @errors.each do |error| %>
-<li>
-  <%= error %>
-</li>
+  <p><strong>Oh-oh! Fix these errors to move on:</strong></p>
+  <ul class="errors">
+    <% @errors.each do |error| %>
+    <li>
+      <%= error %>
+    </li>
+    <% end %>
+  </ul>
 <% end %>
-</ul>
-<% end %> <br>
 
-<%= form_for @character do |f| %>
+<div class="signup">
+  <%= form_for @character, :html => {:class => 'login'} do |f| %>
 
-<%= f.label :name, "Character's name:"  %>
-<%= f.text_field :name %> <br>
+  <%= f.label :name, "CHARACTER'S NAME"  %>
+  <%= f.text_field :name %> 
 
-<%= f.label :gender_id, "Character's gender:" %> <%= f.collection_select :gender_id, Gender.order(:name).all, :id, :name, :prompt => '~please select~', form: {style: 'display:inline-block;'}, style: "float: left;" %>
-<%= link_to "Wanna add a gender expression?", new_gender_path, method: :get, form: {style: 'display:inline-block;'}, :style => "font-family: 'Monaco'; color: #0E2B3F; font-size: 15pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;" %>
-<br><br>
+  <%= f.label :gender_id, "CHARACTER'S GENDER" %> <%= f.collection_select :gender_id, Gender.order(:name).all, :id, :name, :prompt => 'PLEASE SELECT' %>
 
-<%= f.label :pronoun_one_id, "Character's pronoun ('___ is happy.'):" %>
-<%= f.collection_select :pronoun_one_id, PronounOne.order(:name).all, :id, :name, :prompt => '~please select~' %><br>
+  <%= link_to "Wanna add a gender expression?", new_gender_path, method: :get%>
+  
 
-<%= f.label :pronoun_two_id, "Character's pronoun ('This person did it all by ____.'):"  %>
-<%= f.collection_select :pronoun_two_id, PronounTwo.order(:name).all, :id, :name, :prompt => '~please select~' %><br>
+  <%= f.label :pronoun_one_id, "CHARACTER'S PRONOUN:" %>
+  <%= f.collection_select :pronoun_one_id, PronounOne.order(:name).all, :id, :name, :prompt => 'PLEASE SELECT' %>
+  <span> ('___ is happy.') </span >
 
-<%= f.label :pronoun_three_id, "Character's pronoun ('This is ___ painting.'):" %>
-<%= f.collection_select :pronoun_three_id, PronounThree.order(:name).all, :id, :name, :prompt => '~please select~' %><br>
+  <%= f.label :pronoun_two_id, "CHARACTER'S PRONOUN:"  %>
+  <%= f.collection_select :pronoun_two_id, PronounTwo.order(:name).all, :id, :name, :prompt => 'PLEASE SELECT' %>
+  <span> ('This person did it all by ____.') </span>
 
-<%= f.label :pronoun_four_id, "Character's pronoun ('I'm meething ___ now.'):" %>
-<%= f.collection_select :pronoun_four_id, PronounFour.order(:name).all,:id, :name, :prompt => '~please select~' %><br>
+  <%= f.label :pronoun_three_id, "CHARACTER'S PRONOUN:" %>
+  <%= f.collection_select :pronoun_three_id, PronounThree.order(:name).all, :id, :name, :prompt => 'PLEASE SELECT' %>
+  <span> ('This is ___ painting.') </span>
 
-<%= f.label :race_id, "Character's race or ethnicity:" %><%= f.collection_select :race_id, Race.order(:name).all,:id, :name, :prompt => '~please select~', form: {style: 'display:inline-block;'}, style: "float: left;" %>
-<%= link_to "Wanna add a new race or ethnicity?", new_race_path, method: :get, form: {style: 'display:inline-block;'}, :style => "font-family: 'Monaco'; color: #0E2B3F; font-size: 15pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;" %>
-<br><br>
+  <%= f.label :pronoun_four_id, "CHARACTER'S PRONOUN:" %>
+  <%= f.collection_select :pronoun_four_id, PronounFour.order(:name).all,:id, :name, :prompt => 'PLEASE SELECT' %>
+  <span> ('I'm meething ___ now.') </span>
 
-<%= f.label :adjective, "What adjective describes the character best?" %>
-<%= f.select :adjective, Character::ADJECTIVES, :prompt => '~please select~' %><br>
+  <%= f.label :race_id, "CHARACTER'S race or ethnicity:" %><%= f.collection_select :race_id, Race.order(:name).all,:id, :name, :prompt => 'PLEASE SELECT'%>
+  <%= link_to "Wanna add a new race or ethnicity?", new_race_path, method: :get %>
+  
 
-<%= f.label :character_description_one, "Yesterday, the character..." %>
-<%= f.select :character_description_one, Character::CHARACTER_DESCRIPTION_ONE, :prompt => '~please select~' %><br>
+  <%= f.label :adjective, "What adjective describes the character best?" %>
+  <%= f.select :adjective, Character::ADJECTIVES, :prompt => 'PLEASE SELECT' %>
 
-<%= f.label :character_description_two, "What is character's level of ability?" %>
-<%= f.select :character_description_two, Character::CHARACTER_DESCRIPTION_TWO, :prompt => '~please select~' %><br><br>
+  <%= f.label :character_description_one, "Yesterday, the character..." %>
+  <%= f.select :character_description_one, Character::CHARACTER_DESCRIPTION_ONE, :prompt => 'PLEASE SELECT' %>
 
-<%= f.submit 'My character is ready!', :style => "color: #0E2B3F; font-size: 20pt; border: 2px solid; background-color: lightgreen; padding: 15px 20px; border-radius: 20px;"%><br>
+  <%= f.label :character_description_two, "What is CHARACTER'S level of ability?" %>
+  <%= f.select :character_description_two, Character::CHARACTER_DESCRIPTION_TWO, :prompt => 'PLEASE SELECT' %>
 
+  <%= f.submit 'My character is ready!', class: "login-button"%>
 <% end %>
 </div>

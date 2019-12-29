@@ -12,19 +12,19 @@
 <% end %>
 
 <div class="signup">
-<%= form_for @user, :html => {:class => 'login'} do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <%= f.submit 'Sign up', class: "login-button"%>
-<% end %>
+  <%= form_for @user, :html => {:class => 'login'} do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.submit 'Sign up', class: "login-button"%>
+  <% end %>
 
 <%= link_to "Already a member?", new_login_path %>
 </div>
