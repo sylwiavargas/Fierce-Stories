@@ -229,7 +229,11 @@ div.standard-header>h2{
   margin-bottom: 2%;
 }
 
- div.field_with_errors>input, form.login>input:not(.login-button){
+.errors{
+  margin-bottom: 5%;
+}
+
+div.field_with_errors>input, form.login>input:not(.login-button){
   background-color: white; 
   color: #002F5E;
   padding: 1%;
@@ -238,10 +242,6 @@ div.standard-header>h2{
   width: 25vw;
   border: 2px #F10060 solid; 
   display: block;
-}
-
-.errors{
-  margin-bottom: 5%;
 }
 
 input:-webkit-autofill,
@@ -256,7 +256,7 @@ select:-webkit-autofill:focus {
   background-color: white; 
   -webkit-text-fill-color: #002F5E;
   padding: 1%;
-  font-size: 15px;
+  font-size: 30px;
   transition: background-color 5000s ease-in-out 0s;
   height: 3.5vh;
   width: 20vw;
@@ -302,6 +302,11 @@ select:-webkit-autofill:focus {
 
 .stories>li>p{
   font-size: 15px;
+}
+
+/* story page */
+.story{
+  padding: 5%;
 }
 
 
