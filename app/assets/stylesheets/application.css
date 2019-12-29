@@ -43,6 +43,110 @@ body{
   padding: 25px;
 }
 
+h1{
+  font-family: 'Roboto Black', sans-serif;
+  font-size: 60px;
+  line-height: 80%;
+  margin-bottom: 0%;
+}
+
+h2{
+  font-size: 29px;
+  line-height: 0%;
+  font-weight: 100;
+  margin-bottom: 3%;
+}
+
+h3{
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+h4{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.button {
+  text-align: center; 
+  font-size: 25px;
+  color: white;
+  height: 5.5vh;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.float-right{
+  float: right;
+}
+
+.small{
+  font-size: 15px;
+  color: white;
+  height: 5vh;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.pink{
+  color: #F10060;
+}
+
+.standard-margin{
+  margin-bottom: 11vh;
+}
+
+/* header */
+.header {
+  background-color: #002F5E; 
+}
+
+.new-story-button{
+  border: 1px #F10060 solid;
+  background-color:  #F10060;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  float: right;
+  cursor: pointer;
+}
+
+.new-story-button:hover, .new-story-button:focus{
+  border: 1px #F10060 solid;
+  background-color:  white;
+  color: #F10060;
+  font-weight: 400;
+  font-size: 15px;
+  float: right;
+  cursor: pointer;
+}
+
+.header-button{
+  border: 1px white solid;
+  text-decoration: underline;
+  color:  #002F5E;
+  font-weight: 800;
+  font-size: 15px;
+  float: right;
+}
+
+div.standard-header>h1{
+  font-family: 'Roboto Black', sans-serif;
+  font-size: 35px;
+  line-height: 80%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+div.standard-header>h2{
+  font-size: 17px;
+  line-height: 0%;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
+
+/* footer */
 .footer{
   position: absolute;
   font-size: 25px;
@@ -68,20 +172,16 @@ body{
   height: 45px;
 }
 
-.header {
-  background-color: #002F5E; 
-  float: right;
+/* welcome page */
+.welcome{
+  margin-top: 35vh;
 }
 
-.button {
-  text-align: center; 
-  font-size: 25px;
-  color: white;
-  height: 5.5vh;
-  padding-left: 2%;
-  padding-right: 2%;
+.welcome-bottom-margin{
+  margin-bottom: 20vh;
 }
 
+/* sign up and login */
 .main-button{
   background-color: #F10060; 
   float: left;
@@ -93,67 +193,8 @@ body{
   color: #002F5E; 
 }
 
-.left-margin{
+.right-button-left-margin{
   margin-left: 1%;
-}
-
-h1{
-  font-family: 'Roboto Black', sans-serif;
-  font-size: 60px;
-  line-height: 80%;
-  margin-bottom: 0%;
-}
-
-h2{
-  font-size: 29px;
-  line-height: 0%;
-  font-weight: 100;
-  margin-bottom: 3%;
-}
-
-.welcome{
-  margin-top: 35vh;
-}
-
-.welcome-bottom-margin{
-  margin-bottom: 20vh;
-}
-
-.standard-margin{
-  margin-bottom: 11vh;
-}
-
-div.standard-header>h1{
-  font-family: 'Roboto Black', sans-serif;
-  font-size: 35px;
-  line-height: 80%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-div.standard-header>h2{
-  font-size: 17px;
-  line-height: 0%;
-  font-weight: 400;
-  margin-bottom: 3%;
-}
-
-.float-right{
-  float: right;
-}
-
-.small{
-  font-size: 15px;
-  color: white;
-  height: 5vh;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-h3{
-  font-size: 40px;
-  font-weight: 400;
-  margin-bottom: 2%;
 }
 
 .login-button{
@@ -221,6 +262,49 @@ select:-webkit-autofill:focus {
   width: 20vw;
   border: 2px #F10060 solid; 
 }
+
+/* homepage */
+.edit-button{
+  border: 1px #F10060 solid;
+  color:  #002F5E;
+  font-weight: 100;
+  font-size: 15px;
+  float: left;
+}
+
+.edit-button:focus, .edit-button:hover{
+  border: 1px #F10060 solid;
+  background-color:  #F10060;
+  color: white;
+  font-weight: 100;
+  font-size: 15px;
+  float: left;
+}
+
+.delete-button{
+  border: 1px white solid;
+  text-decoration: underline;
+  color:  #002F5E;
+  font-weight: 800;
+  font-size: 15px;
+  float: left;
+  cursor: pointer;
+}
+
+.stories>li{
+  list-style-type: none;
+  margin-bottom: 2%;
+}
+
+.stories>li>p>a{
+  font-weight: 800;
+}
+
+.stories>li>p{
+  font-size: 15px;
+}
+
+
 
 /* 
 * {

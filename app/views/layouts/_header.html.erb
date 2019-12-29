@@ -1,19 +1,16 @@
 <div class="standard-header standard-margin">
   <% if cookies[:moon] %>
-  <%= button_to 'LIGHT MODE', sun_path, method: :get, class: 'button header float-right small' %>
+    <%= button_to 'LIGHT MODE', sun_path, method: :get, class: 'button header float-right small right-button-left-margin' %>
   <% else %>
-  <%= button_to 'DARK MODE', moon_path, method: :get, class: 'button header float-right small'%>
+    <%= button_to 'DARK MODE', moon_path, method: :get, class: 'button header float-right small right-button-left-margin'%>
   <% end %>
+    <% if @logged_in_user %>
+      <%= button_to "LOG OUT", log_out_path, method: :delete, class: 'header-button float-right small right-button-left-margin' %>
+      <%= button_to "Hi #{@logged_in_user.username.upcase}!", story_books_path, method: :get, class: 'header-button float-right small right-button-left-margin' %>
+      <%= button_to "CREATE NEW STORY!", new_character_path, method: :get, class: 'new-story-button header small' %>
+    <% end %>
 <h1>FIERCE STORIES</h1>
 <h2>changing the world one story at a time</h2>
-  <% if @logged_in_user %>
-  <%= button_to "Hi #{@logged_in_user.username.titleize}!", story_books_path, method: :get, class: 'pull-right', style: "float:right; margin-left:500px;", form: {style: 'display:inline-block;'}, :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px; float: right;" %>
-  <%= button_to "Log out", log_out_path, method: :delete, style: "float:right; margin-left:500px;", form: {style: 'display:inline-block;'}, :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px; float: right;" %>
-  <%= button_to "Create a new story!", new_character_path, method: :get, form: {style: 'display:inline-block;'}, :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px; float: right;" %>
-  <% end %>
-
-
-
 </div>
 
 
@@ -27,4 +24,4 @@
 <%#= button_to 'Margins Down', standardmargins_path, method: :get, class: 'header-button', form: {style: 'display:inline-block;'}, :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;" %>
 <%# else %>
 <%#= button_to 'Margins Up', broadmargins_path, method: :get, class: 'header-button', form: {style: 'display:inline-block;'}, :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;" %>
-<%# end %> <br>
+<%# end %>

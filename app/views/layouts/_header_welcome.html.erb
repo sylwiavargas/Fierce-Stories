@@ -1,8 +1,8 @@
 <div>
   <% if cookies[:moon] %>
-  <%= button_to 'LIGHT MODE', sun_path, method: :get, class: 'button header welcome-margin' %>
+  <%= button_to 'LIGHT MODE', sun_path, method: :get, class: 'button header float-right welcome-margin' %>
   <% else %>
-  <%= button_to 'DARK MODE', moon_path, method: :get, class: 'button header welcome-margin'%>
+  <%= button_to 'DARK MODE', moon_path, method: :get, class: 'button header float-right welcome-margin'%>
   <% end %>
 
 </div>
