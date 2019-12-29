@@ -1,20 +1,23 @@
 <div class="story-page">
-  <%= image_tag("arrow.png", :width=>40, :height=>30, :onclick => "location.href='/story_books'", :class => "functional-button", :alt => "Go back", :style => "background-color: #c0c4c7; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;")%>
-  <%= image_tag("print.png", :width=>40, :height=>30, :onclick => 'window.print();return false;', :class => "functional-button", :alt => "Print", :style => "background-color: #c0c4c7; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;") %>
-  <%= image_tag("facebook.png", :width=>40, :height=>30, :onclick => "location.href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com'", :class => "functional-button", :alt => "Share on Facebook", :style => "background-color: #c0c4c7; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;") %>
-  <%= image_tag("twitter.svg", :width=>40, :height=>30, :onclick => "location.href='https://twitter.com/share?ref_src=twsrc%5Etfw'", :class => "functional-button", :alt => "Share on Twitter", :style => "background-color: #c0c4c7; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;") %>
 
+  <div class="story-header">
+    <%= link_to image_tag("facebook.png", :class => "story-page-button float-right", :alt => "Share on Facebook"), 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com', :target => "_blank" %>
+    <%= link_to image_tag("twitter.svg", :class => "story-page-button float-right", :alt => "Share on Twitter"), 'https://twitter.com/share?ref_src=twsrc%5Etfw',  :target => "_blank"%>
+    <%= link_to image_tag("print.png", :width=>40, :height=>30, :onclick => 'window.print();return false;', :class => "story-page-button float-right", :alt => "Print") %>
+    <%= link_to image_tag("arrow.png", :width=>40, :height=>30, :onclick => "location.href='/story_books'", :class => "story-page-button float-right", :alt => "Go back")%>
     <h3 class="pink"><%= @story_book.tag.titleize %></h3>
-    <div class="story">
-      <% @story_book.ready_story.each do |p|%>
-        <p><%=p%> </p>
-      <% end %>
-    </div>
+  </div>
 
-  <%= image_tag("arrow.png", :width=>40, :height=>30, :onclick => "location.href='/story_books'", :class => "functional-button", :alt => "Go back", form: {style: 'display:inline-block;'}, :style => "background-color: #c0c4c7; padding: 7px 12px; text-align: center; border-radius: 20px; margin: 2px 2px 2px 2px;")%>
+  <div class="story">
+    <% @story_book.ready_story.each do |p|%>
+      <p><%=p%> </p>
+    <% end %>
+  </div>
 
+  <div class="story-footer">
+  <%= link_to image_tag("arrow.png", :width=>40, :height=>30, :onclick => "location.href='/story_books'", :class => "story-page-button", :alt => "Go back")%> 
+  
+  <p class="float-right">This is a re-written inclusive version of "<%= @story_book.story.title %>" by <%= @story_book.story.author %> (<%= link_to "Read the original story", @story_book.story.url, :target => "_blank" %>)</p> 
+  </div>
 
-    <!-- .split(". ").map(&:capitalize).join(". ") -->
-    <hr>
-    <p>This is a "revised" inclusive version of "<%= @story_book.story.title %>" by <%= @story_book.story.author %> (<%= link_to "Read the original story", @story_book.story.url %>)</p>
 </div>
