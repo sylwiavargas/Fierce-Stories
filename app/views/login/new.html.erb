@@ -13,12 +13,12 @@
 
 <div class="login">
   <%= form_tag(login_index_path, {class: 'login'}) do %>
-        <%= label_tag :username %>
-        <%= text_field_tag :username %>
-        <%= label_tag :password%>
-        <%= password_field_tag :password %>
+    <%= label_tag :username %>
+    <%= text_field_tag :username %>
+    <%= label_tag :password%>
+    <%= password_field_tag :password %>
     <%= submit_tag "TAKE ME IN!", class: "login-button"%>
   <% end %>
-  <br>
+ 
   <%= link_to "Not a member yet?", new_user_path %>
 </div>

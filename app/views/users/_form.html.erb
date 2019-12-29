@@ -1,40 +1,30 @@
-<div id="form">
+<h3>Sign up to tell fierce stories:</h3>
 
-<h2>Welcome to Fierce Stories</h2>
-
-
-  <% if @errors && @errors.any? %>
-<ul class="errors"> <p>
-  <strong>Oh-oh! Fix these errors to move on:</strong>
-  </p>
-  <% @errors.each do |error| %>
-  <li>
-    <%= error %>
-  </li>
-  <% end %>
-</ul>
-<% end %> <br>
-
-<%= form_for @user do |f| %>
-
-<%= f.label :username %>
-<%= f.text_field :username %>
-
-<%= f.label :name %>
-<%= f.text_field :name %>
-
-<%= f.label :password %>
-<%= f.password_field :password %>
-
-<%= f.label :password_confirmation %>
-<%= f.password_field :password_confirmation %>
-
-<%= f.label :email %>
-<%= f.text_field :email %><br>
-
-<%= f.submit 'Sign in', :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px;" %><br>
-
+<% if @errors && @errors.any? %>
+  <p><strong>Oh-oh! Fix these errors to move on:</strong></p>
+  <ul class="errors">
+    <% @errors.each do |error| %>
+    <li>
+      <%= error %>
+    </li>
+    <% end %>
+  </ul>
 <% end %>
 
-<%= link_to "Already a member?", new_login_path, :style => "font-family: 'Cupertino'; text-align: center; color: #0E2B3F; font-size: 20pt; background-color: lightgreen; padding: 7px 12px; text-align: center; border-radius: 20px;" %>
+<div class="signup">
+<%= form_for @user, :html => {:class => 'login'} do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.submit 'Sign up', class: "login-button"%>
+<% end %>
+
+<%= link_to "Already a member?", new_login_path %>
 </div>
