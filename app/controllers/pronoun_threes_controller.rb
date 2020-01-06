@@ -1,2 +1,0 @@
-class PronounThreesController < ApplicationController
-end
