@@ -1,25 +1,20 @@
-<div id="form">
-<h1>Help us be<br>more inclusive</h1>
-<br><br>
+<h3>Help us be <br>more inclusive</h3>
 
 <% if @errors && @errors.any? %>
-<ul class="errors"> <p>
-<strong>Oh-oh! Fix these errors to move on:</strong>
-</p>
-<% @errors.each do |error| %>
-<li>
-  <%= error %>
-</li>
+  <p><strong>Oh-oh! Fix these errors to move on:</strong></p>
+  <ul class="errors">
+    <% @errors.each do |error| %>
+    <li>
+      <%= error %>
+    </li>
+    <% end %>
+  </ul>
 <% end %>
-</ul>
-<% end %> <br>
 
-<%= form_for @race do |f| %>
-
-<%= f.label :name, "Race or ethnicity missing in our database:"  %><br>
-<%= f.text_field :name %><br>
-
-<%= f.submit 'Done!', :style => "color: #0E2B3F; font-size: 20pt; border: 2px solid; background-color: lightgreen; padding: 8px 10px; border-radius: 20px;"%><br>
-
+<div class="signup">
+<%= form_for @race, :html => {:class => 'login'} do |f| %>
+  <%= f.label :name, "Race or ethnicity missing in our database:"  %><br>
+  <%= f.text_field :name %>
+  <%= f.submit 'Done!', class: "login-button"%>
 <% end %>
 </div>

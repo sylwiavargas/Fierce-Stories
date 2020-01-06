@@ -12,7 +12,8 @@ class GendersController < ApplicationController
           @gender.save
           redirect_to new_character_path
         else
-          flash[:errors] = @gender.errors.full_messages          
+          flash[:errors] = @gender.errors.full_messages     
+          render :new     
         end
     end
 
