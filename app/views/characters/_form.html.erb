@@ -14,10 +14,10 @@
 <div class="signup">
   <%= form_for @character, :html => {:class => 'login'} do |f| %>
 
-  <%= f.label :name, "CHARACTER'S NAME"  %>
+  <%= f.label :name, "CHARACTER'S NAME:"  %>
   <%= f.text_field :name %> 
 
-  <%= f.label :gender_id, "CHARACTER'S GENDER" %> <%= f.collection_select :gender_id, Gender.order(:name).all, :id, :name, :prompt => 'PLEASE SELECT' %>
+  <%= f.label :gender_id, "CHARACTER'S GENDER:" %> <%= f.collection_select :gender_id, Gender.order(:name).all, :id, :name, :prompt => 'PLEASE SELECT' %>
 
   <%= link_to "Wanna add a gender expression?", new_gender_path, method: :get%>
   

@@ -16,7 +16,7 @@
     <p><%= f.label :character_id %>'s name:
     <%= @story_book.character.name.titleize %> </p>
     <%= f.hidden_field :character_id, value: @story_book.character.id %>
-    <%= f.label :story_id, "YOUR STORY IS ABOUT" %>
+    <%= f.label :story_id, "YOUR STORY IS ABOUT:" %>
     <%= f.collection_select :story_id, Story.order(:issue).all, :id, :issue, :prompt => 'PLEASE SELECT' %>
     <%= f.label :tag, "ENTITLE YOUR STORY:" %>
     <%= f.text_field :tag %>
