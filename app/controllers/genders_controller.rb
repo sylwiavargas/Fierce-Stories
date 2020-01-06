@@ -8,19 +8,15 @@ class GendersController < ApplicationController
     def create
       @gender = Gender.new(gender_params)
         if @gender.valid?
+          flash[:success] = "Good job filling out the form!"
           @gender.save
           redirect_to new_character_path
-          flash[:success] = "Good job filling out the form!"
         else
-          flash[:errors] = @gender.errors.full_messages          render :new
+          flash[:errors] = @gender.errors.full_messages          
         end
     end
 
     private
-
-    def get_gender
-      @gender = Gender.find(params[:id])
-    end
 
     def gender_params
       params.require(:gender).permit(:name)
