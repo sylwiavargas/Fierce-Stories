@@ -1,24 +1,3 @@
-# README
+# Fierce Stories
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Choosing a bedtime story can be a nightmare if you care about diversity. Fierce Stories allows parents and caregivers to customize bedtime stories to include diverse set of characters and subjects. The website is available in two modes (dark/light) to improve its accessibility. Developed as a Rails group assignment by Yoonmi Kim and Sylwia Vargas. 
